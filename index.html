@@ -19,7 +19,7 @@
         <!-- Section Start -->
         <section class="container">
             <!-- Section Title -->
-            <h2 class="text-center text-info my-5">My Savings</h2>
+            <h2 class="text-center text-info fw-bold my-5">My Savings</h2>
             <!-- content start -->
             <div class="row gx-lg-5">
                 <!-- Images -->
@@ -27,59 +27,70 @@
                     <img class="w-100 h-75" src="images/money.jpg" alt="">
                 </div>
                 <!-- calculation -->
-                <div class="col-lg-5 bg-light h-100">
-                    <h5 class="text-center mt-5 mb-3">Income</h5>
+                <div class="col-lg-5 bg-light h-100 pb-lg-5">
+                    <h5 class="text-center fw-bold mt-5 mb-3">Income</h5>
                     <div class="row">
                         <div class="col-lg-4">
                             <p class="text-end">Income:</p>
                         </div>
                         <div class="col-lg-8">
-                            <input type="text">
+                            <input id="income" type="text">
                         </div>
-                        <h5 class="text-center mt-4 mb-3">Expenses</h5>
-                        <div class="col-lg-4 my-3">
+                        <h5 class="text-center fw-bold my-2">Expenses</h5>
+                        <div class="col-lg-4 mt-3 mb-2">
                             <p class="text-end">Food:</p>
                         </div>
-                        <div class="col-lg-8 my-3">
-                            <input type="text">
+                        <div class="col-lg-8 mt-3 mb-2">
+                            <input id="food" type="text">
                         </div>
-                        <div class="col-lg-4 my-3">
+                        <div class="col-lg-4 my-2">
                             <p class="text-end">Rent:</p>
                         </div>
-                        <div class="col-lg-8 my-3">
-                            <input type="text">
+                        <div class="col-lg-8 my-2">
+                            <input id="rent" type="text">
                         </div>
-                        <div class="col-lg-4 my-3">
+                        <div class="col-lg-4 mb-3 mt-2">
                             <p class="text-end">Clothes:</p>
                         </div>
-                        <div class="col-lg-8 my-3">
-                            <input type="text">
+                        <div class="col-lg-8 mb-3 mt-2">
+                            <input id="clothes" type="text">
+                        </div>
+                    </div>
+                    <div class="ms-5">
+                        <div class="ms-5">
+                            <button id="calculate"
+                                class="btn btn-primary fw-bold mt-2 mb-3 ms-5 px-5">Calculate</button>
                         </div>
                     </div>
 
-                    <button class="btn btn-primary" type="button">Calculate</button>
-                    <h5 class="text-center my-3">Total Expenses: <span>00</span></h5>
-                    <h5 class="text-center my-3">Balance: <span>00</span></h5>
+                    <h5 class="text-center fw-bold my-3">Total Expenses: <span id="total-expenses">00</span></h5>
+                    <h5 class="text-center fw-bold my-3">Balance: <span id="balance">00</span></h5>
 
                     <div class="row container gx-0 my-4">
                         <div class="col-lg-6">
-                            <span class="me-1">Save:</span>
-                            <input class="w-50" type="text">
+                            <div class="ms-5">
+                                <span class="me-1">Save:</span>
+                                <input id="save-input" class="w-50" type="text">
+                            </div>
                         </div>
                         <div class="col-lg-6">
                             <span>%
-                                <button class="btn btn-primary ms-4" type="button">Save</button>
+                                <button id="save-btn" class="btn btn-primary fw-bold ms-5 px-5"
+                                    type="button">Save</button>
                             </span>
                         </div>
                     </div>
 
-                    <h5 class="text-center my-3">Saving Amount: <span>00</span></h5>
-                    <h5 class="text-center mt-3 my-4">Remaining Balance: <span>00</span></h5>
+                    <h5 class="text-center fw-bold my-3">Saving Amount: <span id="saving-amount">00</span></h5>
+                    <h5 class="text-center fw-bold mt-3 my-4">Remaining Balance: <span id="remaining-balance">00</span>
+                    </h5>
                 </div>
             </div>
         </section>
         <!-- Section End -->
     </main>
+    <!-- Javascript -->
+    <script src="scripte/script.js"></script>
 </body>
 
-</html>
+</html
