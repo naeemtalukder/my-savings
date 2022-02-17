@@ -23,64 +23,63 @@
             <!-- content start -->
             <div class="row gx-lg-5">
                 <!-- Images -->
-                <div class="col-lg-7">
+                <div class="col-lg-7 col-sm-12">
                     <img class="w-100 h-75" src="images/money1.jpg" alt="">
                 </div>
                 <!-- calculation -->
-                <div class="col-lg-5 bg-light h-100 pb-lg-5">
+                <div class="col-lg-5 col-sm-12 bg-light h-100 pb-lg-5">
                     <h5 class="text-center fw-bold mt-5 mb-3">Income</h5>
                     <div class="row">
-                        <div class="col-lg-4">
-                            <p class="text-end">Income:</p>
+                        <div class="col-lg-4 col-sm-12 text-center">
+                            <p class="text-center">Income:</p>
                         </div>
-                        <div class="col-lg-8">
-                            <input id="income-input" type="text">
+                        <div class="col-lg-8 col-sm-12">
+                            <input id="income-input" type="number">
                         </div>
-                        <h5 class="text-center fw-bold my-2">Expenses</h5>
+                        <h5 class="text-center fw-bold my-lg-2">Expenses</h5>
                         <div class="col-lg-4 mt-lg-3 mb-lg-2">
-                            <p class="text-end">Food:</p>
+                            <p class="text-center">Food:</p>
                         </div>
-                        <div class="col-lg-8 mt-3 mb-2">
-                            <input id="food-input" type="text">
+                        <div class="col-lg-8 mt-lg-3 mb-lg-2">
+                            <input id="food-input" type="number">
                         </div>
-                        <div class="col-lg-4 my-2">
-                            <p class="text-end">Rent:</p>
+                        <div class="col-lg-4 my-lg-2">
+                            <p class="text-center">Rent:</p>
                         </div>
-                        <div class="col-lg-8 my-2">
-                            <input id="rent-input" type="text">
+                        <div class="col-lg-8 my-lg-2">
+                            <input id="rent-input" type="number">
                         </div>
-                        <div class="col-lg-4 mb-3 mt-2">
-                            <p class="text-end">Clothes:</p>
+                        <div class="col-lg-4 mb-lg-3 mt-lg-2">
+                            <p class="text-center">Clothes:</p>
                         </div>
                         <div class="col-lg-8 mb-3 mt-2">
-                            <input id="clothes-input" type="text">
+                            <input id="clothes-input" type="number">
                         </div>
                     </div>
-                    <div class="ms-5">
-                        <div class="ms-5">
+                    <div class="ms-lg-5">
+                        <div class="ms-lg-5">
                             <button id="calculate"
-                                class="btn btn-primary fw-bold mt-2 mb-3 ms-5 px-5">Calculate</button>
+                                class="btn btn-primary fw-bold mt-lg-2 mb-lg-3 ms-lg-5 px-5">Calculate</button>
                         </div>
                     </div>
-
+                    <!-- Total Expenses & Balance -->
                     <h5 class="text-center fw-bold my-3">Total Expenses: <span id="total-expenses">00</span></h5>
                     <h5 class="text-center fw-bold my-3">Balance: <span id="balance">00</span></h5>
-
+                    <!-- Save % Part -->
                     <div class="row container gx-0 my-4">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-sm-12 my-1">
                             <div class="ms-5">
                                 <span class="me-1">Save:</span>
-                                <input id="save-input" class="w-50" type="text">
+                                <input id="save-input" class="w-50" type="number">
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <span>%
-                                <button id="save-btn" class="btn btn-primary fw-bold ms-5 px-5"
-                                    type="button">Save</button>
-                            </span>
+                        <div class="col-lg-6 col-sm-12">
+                            <span class="ps-3">%</span>
+                            <button id="save-btn" class="btn btn-primary fw-bold ms-5 px-5" type="button">Save</button>
+
                         </div>
                     </div>
-
+                    <!-- Saving Amount & Remaining Balance -->
                     <h5 class="text-center fw-bold my-3">Saving Amount: <span id="saving-amount">00</span></h5>
                     <h5 class="text-center fw-bold mt-3 my-4">Remaining Balance: <span id="remaining-balance">00</span>
                     </h5>
